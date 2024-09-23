@@ -1,16 +1,18 @@
+package org.dcx.fernando;
+
 public class Tarefa {
     private String titulo;
     private  String descricao;
     private boolean concluida;
 
     public Tarefa(String titulo, String descricao, boolean concluida){
-        titulo =this.titulo;
+        titulo = this.titulo;
         descricao = this.descricao;
         concluida = this.concluida;
     }
 
     public String getTitulo() {
-        return titulo;
+        return this.titulo;
     }
 
     public void setTitulo(String titulo) {
@@ -35,7 +37,7 @@ public class Tarefa {
 
     @Override
     public String toString() {
-        return "Tarefa{" +
+        return "org.dcx.fernando.Tarefa{" +
                 "titulo='" + titulo + '\'' +
                 ", descricao='" + descricao + '\'' +
                 ", concluida=" + concluida +
