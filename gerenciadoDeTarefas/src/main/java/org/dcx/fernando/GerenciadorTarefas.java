@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import org.dcx.fernando.Tarefa;
 
 public class GerenciadorTarefas implements SistemaTarefas {
     private Map<String, Tarefa> tarefas;

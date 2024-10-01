@@ -36,6 +36,20 @@ public class TarefaGUIV3 extends JFrame {
         botaoRemover = new JButton("Remover", removerImg);
         botaoRemover.addActionListener(new TarefaRemoveController(tarefa, this));
 
+        // Adicionando JMenuBar
+        JMenuBar menuBar = new JMenuBar();
+        JMenu menu = new JMenu("Mais");
+        JMenuItem menuItem1 = new JMenuItem("Ajuda");
+        JMenuItem menuItem2 = new JMenuItem("Preferências");
+        JMenuItem menuItem3 = new JMenuItem("Sobre");
+
+        menu.add(menuItem1);
+        menu.add(menuItem2);
+        menu.add(menuItem3);
+        menuBar.add(menu);
+
+        setJMenuBar(menuBar);
+
         getContentPane().setLayout(new GridLayout(3, 2));
         getContentPane().add(linha1);
         getContentPane().add(botaoAdicionar);
