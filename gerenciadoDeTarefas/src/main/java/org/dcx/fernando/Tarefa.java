@@ -8,9 +8,9 @@ public class Tarefa {
     private boolean concluida;
 
     public Tarefa(String titulo, String descricao, boolean concluida){
-        titulo = this.titulo;
-        descricao = this.descricao;
-        concluida = this.concluida;
+        this.titulo = titulo;
+        this.descricao = descricao;
+        this.concluida = concluida;
     }
 
 
@@ -40,11 +40,11 @@ public class Tarefa {
 
     @Override
     public String toString() {
-        return "org.dcx.fernando.Tarefa{" +
-                "titulo='" + titulo + '\'' +
-                ", descricao='" + descricao + '\'' +
-                ", concluida=" + concluida +
-                '}';
+        return
+                "Tarefa: "+ "[ Título = '" + titulo + '\'' +
+                ", Descricao ='" + descricao + '\'' +
+                ", Concluida =" + concluida + "]"
+                ;
     }
 
     @Override
